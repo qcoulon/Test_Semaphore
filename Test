@@ -1,4 +1,7 @@
-- hosts:
-    - webserver
+---
+- name: ping module demo
+  hosts: webserver
+  become: false
   tasks:
-    - action: ping
+    - name: test connection
+      ansible.builtin.ping:
