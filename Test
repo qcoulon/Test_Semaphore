@@ -1,4 +1,4 @@
 - hosts:
-    - all
+    - webservers
   tasks:
     - action: ping
